@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom replace</title>
+</head>
+<body>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <button onclick="Demo()">click</button>
+    <button onclick="Counttag()">count</button>
+    <script>
+        // document replace
+        /* function Demo(){
+          document.open("text/html","replace");
+          document.write("<h1>Dom replace</h1>");
+          document.close();
+  
+        }*/
+          function Demo(){
+            let newwindow= window.open();
+            newwindow.document.open();
+            newwindow.document.write("<h1> new window open and write</h1>");
+            newwindow.document.close();
+  
+        }
+        function Counttag(){
+            let myitems=document.getElementsByTagName("p");
+            let CountItem= myitems.length;
+            document.write(CountItem);
+
+        }
+    </script>
+    
+</body>
+</html>

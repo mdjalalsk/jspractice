@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    <script>
+        var array1=['A','B','C','D','E','F'];
+        var array2=['H','I','J','K','L'];
+        var arrray3= array1.concat(array2);
+        document.write(arrray3 +"<br/>");
+        var title="lear with jalal";
+        var titilearray=Array.from(title);
+        document.write(titilearray +"<br/>");
+        document.write(titilearray [8]+"<br/>");
+
+
+         var numArray=['35','40','56','57','58','60'];
+         var result = numArray.filter(function(item){
+            return item < 50
+         });
+         document.write(result +"<br/>");
+
+        //  var value=numArray.find(function(item){
+         var value=numArray.findIndex(function(item){
+            return item >56;
+         })
+             document.write(value +"<br/>");
+     // foreach 
+    numArray.forEach(function(item){
+        document.write(item +"<br/>");
+    });
+    // array includes
+    var incArrray=[5,6,7,8,9,10,11,12,13,14,15];
+    // var incresult=incArrray.includes(50);
+    var incresult=incArrray.indexOf(11);
+    var rvresult=incArrray.reverse();
+
+   document.write(incresult +"<br/>");
+   document.write(rvresult +"<br>");
+   incArrray.push(30,40);
+   document.write(incArrray +"<br/>");
+   incArrray.pop();
+   
+   document.write(incArrray +"<br/>");
+   incArrray.shift();
+   incArrray.shift();
+   document.write(incArrray +"<br/>");
+   incArrray.unshift(100,80);
+   document.write(incArrray +"<br/>");
+   var sArray=[11,2,8,14,5,16,7,8,];
+//    var sresult=sArray.sort();
+//    var sresult=sArray.slice(1,4);
+   sArray.splice(1,2);
+   sArray.splice(4,0,50);
+   document.write(sArray +"<br/>");
+
+   
+    </script>
+    
+</body>
+</html>

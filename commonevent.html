@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>common events</title>
+</head>
+<body onload="Myevent('on load hoice')">
+    <button onclick="Myevent('click hoice')">click</button>
+    <button onmouseover="Myevent('mouse over hoice')">onmouse over</button>
+    <button onmouseout="Myevent('mouse out hoice')">click</button>
+    <!-- <button onclick="Myevent('click hoice')">click</button>
+     -->
+     <hr>
+     <input onchange="Myevent('onchange hoice')"><br/>
+     <input onkeydown="Myevent('key down hoice')"><br/>
+     <input onkeyup="Myevent('onkeyup hoice')"><br/>
+  
+    <script>
+function Myevent(msg){
+    console.log(msg);
+
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query slector</title>
+</head>
+<body>
+    <h1>h1</h1>
+    <h2 id="myid">h2</h2>
+    <h3 class="myclass">h2</h3>
+    <p name="myname">jkshfkjhfvdsgjkvh </p>
+    <button onclick="clickEvent()">onclick</button>
+    <script>
+        function clickEvent(){
+        document.querySelector('h1').innerHTML ="hello world";
+        document.querySelector('#myid').innerHTML ="I love my country";
+        document.querySelector('.myclass').innerHTML ="I cann't live but for you";
+        document.querySelector('p[name]').innerHTML ="i  am a regular  student";
+
+        }
+
+    </script>
+    
+</body>
+</html>

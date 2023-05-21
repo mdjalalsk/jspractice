@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <script>
+        function addTwoNumbers(a,b){
+            // var a=20;
+            // var b=30;
+            var sum=a+b;
+            document.write(sum+"<br/>");
+        }
+        addTwoNumbers(20,30);
+        
+        addTwoNumbers(100,50);
+        var person={
+            name:"jalal",
+            age:"25",
+            address:"Dhaka",
+        }
+        document.write (person.age+"<br/>");
+        document.write (person['name' ] +"<br/>");
+        for(var item in person){
+            document.write(item+"<br/>");
+            document.write(person[item]+"<br/>");
+        }
+
+        var items=[
+            'Food',
+            'drink',
+            'vegatabales',
+            'water',
+            
+        ]
+        var i;
+        // for( i=0;i<items.length;i++){
+        //     document.write(items[i]+ "<br/>");
+        // }
+      
+       for(var products in items){
+        document.write(items[products]+"<br/>");
+       }
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+</head>
+
+<body>
+    <h1 id="MyId"></h1>
+
+    <h1 class="Myclass"> </h1>
+    <p class="Myclass"></p>
+    <button class="Myclass"></button>
+    <hr>
+    <h2 name="Myname">h2</h2>
+    <button name="Myname"></button>
+    <p name="Myname">jalal</p>
+    <hr>
+    <b>b1</b><br>
+    <b>b2</b><br>
+    <b>b3</b>
+    <hr>
+    <p id="demo"></p>
+    <button onclick="Demo()">click</button>
+    <script>
+        var myelement=document.getElementById("MyId") ;
+        myelement.innerHTML="hello world";
+
+        var mycls=document.getElementsByClassName("Myclass");
+        mycls[0].innerHTML="Eid Mubarak";
+
+        var myname=document.getElementsByName("Myname");
+        myname[1].innerHTML="h2 it is heading";
+
+        var mytags=document.getElementsByTagName("b");
+        mytags[1].innerHTML="b2 manupulationg";
+        function Demo(){
+            // var info=document.domainName;
+            // var info=document.lastModified;
+            var info=document.title;
+            var info=document.URL;
+            // var info=document.cookie;
+           document.getElementById("demo").innerHTML=info;
+
+  
+        }
+    
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appaind element</title>
+</head>
+<body>
+    <ul id="Myitem">
+
+    </ul><br><br>
+    <input type="text" id="Myinput"><br><br>
+    <button onclick="Additems()">Add items</button>
+<script>
+    function Additems(){
+        var itemvalue=document.getElementById("Myinput").value;
+        var listitem=document.createElement('li');
+        listitem.innerHTML=itemvalue;
+        var Myitems=document.getElementById("Myitem");
+        Myitems.appendChild(listitem);
+    }
+</script>
+    
+</body>
+</html>

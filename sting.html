@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sting</title>
+</head>
+<body>
+    <script>
+        var country1="  Bangladesh  ";
+
+        var country2="India";
+       document.write(country1.charAt(5)+"<br/>") ;
+       document.write(country1.concat(country2)+"<br/>") ;
+       document.write(country1.indexOf("a")+"<br/>");
+       document.write(country1.lastIndexOf("a")+"<br/>");
+       document.write(country1.replace("desh","DESHI")+"<br/>")
+       document.write(country1.substr(0,6)+"<br/>");
+       document.write(country1.substring(6,10)+"<br/>");//substring and slice as same mathod
+       document.write(country1.slice(6,10)+"<br/>");
+       document.write(country1.toUpperCase()+"<br/>");
+       document.write(country1.toLowerCase()+"<br/>");
+       document.write(country1.length+"<br/>");
+
+       var tr=country1.trim();
+       document.write(tr.length+"<br/>");
+    //    date akta built in object 
+    var obj=new Date();
+    document.write(obj.getDate()+"<br/>");
+    document.write(obj.getDay()+"<br/>");
+    document.write(obj.getHours()+"<br/>");
+    document.write(obj.getFullYear()+"<br/>");
+     
+    </script>
+    
+</body>
+</html>
